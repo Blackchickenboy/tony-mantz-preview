@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
 <title>Tony "Jack the Bear" Mantz | Speaker</title>
-<meta name="description" content="Tony 'Jack the Bear' Mantz: talks and workshops for men and workplaces on fathers and sons, mental health, addiction, grief and hope. Melbourne and Victoria.">
+<meta name="description" content="Tony 'Jack the Bear' Mantz: 45 years in music, now keynotes, guest talks and workshops for men and workplaces on fathers and sons, mental health, addiction and hope.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -17,10 +17,10 @@
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--cream);font-family:'Inter',system-ui,sans-serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+body{background:var(--bg);color:var(--cream);font-family:'Inter',system-ui,sans-serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;padding-bottom:36px;overflow-x:hidden}
 img{display:block;max-width:100%}
 a{color:inherit}
-.serif{font-family:'Fraunces',Georgia,serif}
+i{font-style:italic}
 .wrap{width:min(1180px,100% - 32px);margin:0 auto}
 .eyebrow{font-size:12.5px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--ember)}
 .btn{display:inline-flex;align-items:center;gap:10px;padding:15px 26px;border-radius:999px;font-weight:600;font-size:15.5px;text-decoration:none;transition:transform .15s ease,background .15s ease}
@@ -29,32 +29,40 @@ a{color:inherit}
 .btn-primary:hover{background:var(--ember-hi)}
 .btn-ghost{border:1px solid #4a433c;color:var(--cream)}
 .btn-ghost:hover{border-color:var(--cream)}
+.credit{font-size:12.5px;color:var(--dim);margin-top:8px}
+.support-link{margin-top:18px;font-size:14.5px;color:var(--dim)}
+.support-link a{color:var(--ember-hi);text-decoration:none;border-bottom:1px solid var(--ember)}
+
+/* draft strip */
+.draft{position:fixed;left:0;right:0;bottom:0;z-index:50;background:#d9893a;color:#160e05;text-align:center;font:600 13px Inter,sans-serif;padding:8px 16px}
 
 /* header */
 header{position:absolute;inset:0 0 auto 0;z-index:5}
 header .wrap{display:flex;align-items:center;justify-content:space-between;padding:22px 0}
 .brand{display:flex;align-items:center;gap:14px;text-decoration:none}
 .brand img{height:64px;width:auto}
-.brand span{font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
-header nav{display:flex;gap:26px;align-items:center;font-size:14.5px}
+header nav{display:flex;gap:24px;align-items:center;font-size:14.5px}
 header nav a{text-decoration:none;color:var(--muted)}
 header nav a:hover{color:var(--cream)}
 header nav .btn{padding:10px 18px;font-size:14px;color:#160e05}
 
 /* hero */
-.hero{position:relative;min-height:min(100svh,920px);display:flex;align-items:flex-end;overflow:hidden}
+.hero{position:relative;min-height:min(100svh,940px);display:flex;align-items:flex-end;overflow:hidden;padding:0}
 .hero-img{position:absolute;top:0;bottom:0;right:0;left:40%;background:url(img/portrait-face.jpg) 50% 30%/cover no-repeat}
 .hero::after{content:"";position:absolute;inset:0;background:
   linear-gradient(90deg,var(--bg) 0%,var(--bg) 40%,rgba(14,13,12,.55) 52%,rgba(14,13,12,0) 70%,rgba(14,13,12,.2) 100%),
   linear-gradient(0deg,var(--bg) 0%,rgba(14,13,12,0) 30%)}
-.hero .wrap{position:relative;z-index:2;padding:150px 0 110px}
-.hero h1{font-family:'Fraunces',Georgia,serif;font-weight:700;font-size:clamp(48px,8.2vw,112px);line-height:.98;letter-spacing:-.02em;margin:18px 0 26px;max-width:9.5em}
+.hero .wrap{position:relative;z-index:2;padding:150px 0 90px}
+.hero h1{font-family:'Fraunces',Georgia,serif;font-weight:700;font-size:clamp(48px,8.2vw,112px);line-height:.98;letter-spacing:-.02em;margin:18px 0 22px;max-width:9.5em}
 .hero h1 em{font-style:italic;font-weight:500;color:var(--ember)}
-.hero p.lede{font-size:clamp(18px,2vw,21px);color:#ddd5c9;max-width:34em;margin-bottom:34px}
+.hero p.lede{font-size:clamp(19px,2.1vw,23px);color:#ddd5c9;max-width:34em;margin-bottom:30px}
 .hero .ctas{display:flex;gap:14px;flex-wrap:wrap}
-.hero .where{margin-top:34px;font-size:14px;color:var(--dim)}
+.records{margin-top:40px;max-width:36em;border-top:1px solid var(--line);padding-top:20px}
+.records .eyebrow{color:var(--dim);display:block;margin-bottom:10px}
+.records ul{list-style:none;display:grid;gap:6px;font-size:15px;color:#ddd5c9}
+.records b{color:var(--ember-hi);font-weight:600;margin-right:6px}
 
-/* proof strip */
+/* facts strip */
 .proof{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--bg2)}
 .proof .wrap{display:grid;grid-template-columns:repeat(3,1fr)}
 .proof div{padding:28px 22px;border-left:1px solid var(--line)}
@@ -65,45 +73,57 @@ header nav .btn{padding:10px 18px;font-size:14px;color:#160e05}
 section{padding:110px 0}
 h2{font-family:'Fraunces',Georgia,serif;font-weight:700;font-size:clamp(34px,4.6vw,58px);line-height:1.05;letter-spacing:-.015em;margin:14px 0 24px}
 h2 em{font-style:italic;font-weight:500;color:var(--ember)}
+.sub{color:var(--muted);max-width:34em}
 
 /* message */
 .message .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:70px;align-items:center}
 .message blockquote{font-family:'Fraunces',Georgia,serif;font-style:italic;font-weight:500;font-size:clamp(24px,2.6vw,33px);line-height:1.3;color:var(--cream);border-left:3px solid var(--ember);padding-left:26px;margin:6px 0 22px}
 .message cite{display:block;font-style:normal;font-size:14px;color:var(--dim);padding-left:29px}
-.message figure{position:relative}
 .message figure img{width:100%;aspect-ratio:1/1;object-fit:cover;object-position:50% 40%;border-radius:4px;filter:contrast(1.05)}
 
 /* story */
 .story{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .story .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px}
 .story .lead{position:sticky;top:40px;align-self:start}
-.story .lead p{color:var(--muted);max-width:26em}
+.story .lead p.sub{max-width:26em}
+.story .lead figure{margin-top:30px}
+.story .lead figure img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:50% 30%;border-radius:4px}
 .timeline{list-style:none;border-left:1px solid #3a342e;margin-left:6px}
 .timeline li{position:relative;padding:0 0 34px 34px}
 .timeline li:last-child{padding-bottom:0}
 .timeline li::before{content:"";position:absolute;left:-6px;top:8px;width:11px;height:11px;border-radius:50%;background:var(--bg2);border:2px solid var(--ember)}
 .timeline h3{font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--ember);font-weight:600;margin-bottom:6px}
 .timeline p{color:#ddd5c9}
+.timeline .support-link{margin-top:10px}
+
+/* bridge: Mastering Music, Mastering Life */
+.bridge .wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:60px;align-items:center}
+.bridge .box p{color:#ddd5c9;max-width:30em}
+.bridge figure img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:4px}
 
 /* talks */
 .talks .head{max-width:40em;margin-bottom:46px}
-.talks .head p{color:var(--muted)}
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
 .card{background:var(--bg2);border:1px solid var(--line);border-radius:6px;padding:34px 30px 32px;display:flex;flex-direction:column}
 .card .num{font-family:'Fraunces',Georgia,serif;font-style:italic;color:var(--ember);font-size:22px}
 .card h3{font-family:'Fraunces',Georgia,serif;font-weight:700;font-size:27px;line-height:1.15;margin:10px 0 12px}
 .card p{color:var(--muted);font-size:16px}
-.card .for{margin-top:auto;padding-top:22px;font-size:13.5px;color:var(--dim);border-top:1px solid var(--line);margin-top:24px}
+.card .for{padding-top:22px;font-size:13.5px;color:var(--dim);border-top:1px solid var(--line);margin-top:auto}
 .card .for b{color:var(--cream);font-weight:600}
+.also{margin-top:26px;font-size:15px;color:var(--dim)}
+.also b{color:var(--muted);font-weight:600}
+.midcta{margin-top:56px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;background:radial-gradient(120% 160% at 0% 0%,#2a1b0d 0%,var(--bg2) 60%);border:1px solid var(--line);border-radius:8px;padding:30px 34px}
+.midcta p{font-family:'Fraunces',Georgia,serif;font-size:clamp(22px,2.4vw,28px);line-height:1.25;max-width:22em}
 
-/* stage photo band */
-.stage{position:relative;min-height:520px;display:flex;align-items:center;overflow:hidden;padding:0}
-.stage .bg{position:absolute;inset:0;background:url(img/speaking.jpg) 38% 12%/cover no-repeat;filter:grayscale(1) contrast(1.1)}
-.stage::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(14,13,12,.2) 0%,rgba(14,13,12,.55) 45%,rgba(14,13,12,.95) 72%)}
-.stage .wrap{position:relative;z-index:2;display:flex;justify-content:flex-end}
-.stage .box{max-width:30em;padding:90px 0}
-.stage .box p.q{font-family:'Fraunces',Georgia,serif;font-style:italic;font-size:clamp(26px,3vw,38px);line-height:1.25;margin:14px 0 14px}
-.stage .box span{color:var(--dim);font-size:14px}
+/* quote band */
+.stage{position:relative;min-height:540px;display:flex;align-items:center;overflow:hidden;padding:0}
+.stage .bg{position:absolute;inset:0;background:url(img/mic-bw.jpg) 62% 30%/cover no-repeat}
+.stage::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(14,13,12,.97) 0%,rgba(14,13,12,.9) 34%,rgba(14,13,12,.2) 58%,rgba(14,13,12,0) 100%)}
+.stage .wrap{position:relative;z-index:2}
+.stage .box{max-width:28em;padding:90px 0}
+.stage .box p.q{font-family:'Fraunces',Georgia,serif;font-style:italic;font-size:clamp(28px,3.4vw,44px);line-height:1.2;margin:14px 0 14px}
+.stage .box span.by{color:var(--dim);font-size:14px}
+.photo-tag{position:absolute;right:16px;bottom:12px;z-index:3;font-size:12px;color:#a59c90;background:rgba(0,0,0,.45);padding:3px 8px;border-radius:3px}
 
 /* safety */
 .safety .wrap{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}
@@ -111,12 +131,49 @@ h2 em{font-style:italic;font-weight:500;color:var(--ember)}
 .safety li{background:var(--bg2);border:1px solid var(--line);border-radius:6px;padding:20px 22px;color:#ddd5c9}
 .safety li b{display:block;color:var(--cream);margin-bottom:4px}
 
+/* listen */
+.listen{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.ep{display:grid;grid-template-columns:auto 1fr auto;gap:26px;align-items:center;background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:26px 30px;margin-top:10px}
+.ep .play{width:58px;height:58px;border-radius:50%;background:var(--ember);display:grid;place-items:center}
+.ep .play svg{width:22px;height:22px;margin-left:4px;fill:#160e05}
+.ep .show{font-size:12.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--dim)}
+.ep h3{font-family:'Fraunces',Georgia,serif;font-size:24px;line-height:1.2;margin:4px 0 6px}
+.ep p{color:var(--muted);font-size:15px}
+.listen .more{margin-top:18px;font-size:14.5px;color:var(--dim)}
+
+/* podcast hosts */
+.hosts .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:start}
+.hosts h3{font-family:'Fraunces',Georgia,serif;font-size:24px;margin:38px 0 14px}
+.hosts h3.first{margin-top:6px}
+.topics{list-style:none;counter-reset:t;display:grid;gap:14px}
+.topics li{counter-increment:t;position:relative;padding-left:44px;color:#ddd5c9}
+.topics li::before{content:"0" counter(t);position:absolute;left:0;top:0;font-family:'Fraunces',Georgia,serif;font-style:italic;color:var(--ember);font-size:20px}
+.topics b{color:var(--cream)}
+.qs{list-style:none;display:grid;gap:8px;color:var(--muted)}
+.qs li{padding-left:16px;border-left:2px solid var(--line)}
+.hosts dl{display:grid;grid-template-columns:auto 1fr;gap:8px 18px;color:#ddd5c9;font-size:16px}
+.hosts dt{color:var(--dim);font-size:13px;letter-spacing:.14em;text-transform:uppercase;padding-top:3px}
+.shots{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.shots a{display:block;text-decoration:none;font-size:13px;color:var(--muted)}
+.shots img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:4px;margin-bottom:6px;border:1px solid var(--line)}
+.shots a:hover span{color:var(--cream)}
+.note{margin-top:26px;background:var(--bg2);border:1px solid var(--line);border-left:3px solid var(--ember);border-radius:6px;padding:20px 22px;color:#ddd5c9;font-size:15.5px}
+.note ul{list-style:none;margin-top:10px;display:grid;gap:4px}
+.note a{color:var(--ember-hi);text-decoration:none}
+
 /* press */
-.press{padding:70px 0;border-top:1px solid var(--line)}
-.press .eyebrow{color:var(--dim);text-align:center;display:block;margin-bottom:26px}
+.press{padding:90px 0;border-top:1px solid var(--line)}
+.feature{display:grid;grid-template-columns:auto 1fr;gap:40px;align-items:center;max-width:900px;margin:0 auto 64px}
+.feature a.clip{display:block;width:240px;border-radius:4px;overflow:hidden;border:1px solid var(--line)}
+.feature .src{font-size:12.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--dim)}
+.feature h3{font-family:'Fraunces',Georgia,serif;font-size:32px;line-height:1.15;margin:6px 0 10px}
+.feature p{color:var(--muted)}
+.feature p a{color:var(--ember-hi);text-decoration:none;border-bottom:1px solid var(--ember)}
+.press .eyebrow.c{color:var(--dim);text-align:center;display:block;margin-bottom:26px}
 .logos{display:flex;flex-wrap:wrap;justify-content:center;align-items:baseline;gap:14px 42px}
-.logos span{font-family:'Fraunces',Georgia,serif;font-weight:700;font-size:23px;color:#cfc6b8;opacity:.75;white-space:nowrap}
-.logos span.sans{font-family:'Inter',sans-serif;font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:17px}
+.logos a{font-family:'Fraunces',Georgia,serif;font-weight:700;font-size:23px;color:#cfc6b8;opacity:.75;white-space:nowrap;text-decoration:none}
+.logos a:hover{opacity:1}
+.logos a.sans{font-family:'Inter',sans-serif;font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:17px}
 
 /* book */
 .book{background:radial-gradient(120% 140% at 0% 0%,#2a1b0d 0%,var(--bg) 55%);border-top:1px solid var(--line)}
@@ -128,6 +185,10 @@ h2 em{font-style:italic;font-weight:500;color:var(--ember)}
 .book .panel dd{font-size:18px;margin-top:4px}
 .book .panel dd a{text-decoration:none;border-bottom:1px solid var(--ember)}
 .book .panel .btn{margin-top:28px;width:100%;justify-content:center}
+.socials{display:flex;flex-wrap:wrap;gap:10px 18px;margin-top:6px}
+.socials a{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-size:15px;color:var(--cream)}
+.socials svg{width:18px;height:18px;fill:currentColor;flex:none}
+.socials a:hover{color:var(--ember-hi)}
 
 /* help */
 .help{background:#000;padding:56px 0 40px;border-top:1px solid var(--line)}
@@ -137,66 +198,94 @@ h2 em{font-style:italic;font-weight:500;color:var(--ember)}
 .lines a{display:block;text-decoration:none;border:1px solid var(--line);border-radius:6px;padding:16px 18px}
 .lines a b{display:block;font-size:15px}
 .lines a span{font-size:20px;font-weight:600;color:var(--ember-hi);letter-spacing:.02em}
-.support-link{margin-top:18px;font-size:14.5px;color:var(--dim)}
-.support-link a{color:var(--ember-hi);text-decoration:none;border-bottom:1px solid var(--ember)}
 .help .urgent{margin-top:18px;font-size:14.5px;color:var(--muted)}
 footer{background:#000;color:var(--dim);font-size:13px;padding:26px 0 40px}
-footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;border-top:1px solid #1d1b19;padding-top:22px}
+footer .wrap{display:grid;gap:16px;border-top:1px solid #1d1b19;padding-top:22px}
+footer .row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer .socials a{color:var(--muted);font-size:14px}
 
 @media (max-width:900px){
   header nav a:not(.btn){display:none}
-  .hero .eyebrow{font-size:11px;letter-spacing:.1em}
-  .hero-img{left:0;bottom:auto;height:min(118vw,520px);background-position:52% 18%;background-size:cover}
-  .hero::after{background:linear-gradient(180deg,rgba(14,13,12,.35) 0,rgba(14,13,12,0) 110px,rgba(14,13,12,0) calc(min(118vw,520px) - 190px),var(--bg) calc(min(118vw,520px) - 10px),var(--bg) 100%)}
-  .hero .wrap{padding-top:calc(min(118vw,520px) - 70px);padding-bottom:64px}
+  .brand img{height:54px}
+  .hero .eyebrow{font-size:11px;letter-spacing:.14em}
+  .hero{min-height:0}
+  .hide-sm{display:none}
+  .hero-img{left:0;bottom:auto;height:min(100vw,480px);background-position:52% 18%;background-size:cover}
+  .hero::after{background:linear-gradient(180deg,rgba(14,13,12,.35) 0,rgba(14,13,12,0) 100px,rgba(14,13,12,0) calc(min(100vw,480px) - 170px),var(--bg) calc(min(100vw,480px) - 10px),var(--bg) 100%)}
+  .hero .wrap{padding-top:calc(min(100vw,480px) - 80px);padding-bottom:48px}
+  .hero h1{margin:14px 0 16px}
+  .hero p.lede{margin-bottom:22px}
+  .records{margin-top:28px;padding-top:16px}
   .proof .wrap{grid-template-columns:1fr}
   .proof div{border-left:0;padding:18px 0;border-top:1px solid var(--line)}
   .proof div:first-child{border-top:0}
+  .proof b{font-size:28px}
   section{padding:76px 0}
-  .message .wrap,.story .wrap,.safety .wrap,.book .wrap{grid-template-columns:1fr;gap:40px}
+  .message .wrap,.story .wrap,.safety .wrap,.book .wrap,.hosts .wrap{grid-template-columns:1fr;gap:40px}
   .story .lead{position:static}
   .cards{grid-template-columns:1fr}
-  .stage::after{background:linear-gradient(0deg,rgba(14,13,12,.97) 30%,rgba(14,13,12,.35) 100%)}
-  .stage .box{padding:260px 0 60px}
+  .bridge .wrap{grid-template-columns:1fr;gap:30px}
+  .stage::after{background:linear-gradient(0deg,rgba(14,13,12,.97) 38%,rgba(14,13,12,.3) 100%)}
+  .stage .box{padding:300px 0 60px}
+  .stage .bg{background-position:70% 20%}
+  .photo-tag{top:12px;bottom:auto}
+  .ep{grid-template-columns:auto 1fr;padding:22px}
+  .ep .btn{grid-column:1/-1;justify-content:center}
+  .feature{grid-template-columns:1fr;gap:24px}
+  .feature a.clip{width:min(240px,70%)}
+  .midcta{padding:26px 22px}
+  .midcta .btn{width:100%;justify-content:center}
   .lines{grid-template-columns:1fr 1fr}
+}
+@media (max-width:420px){
+  .lines{grid-template-columns:1fr}
+  .hosts dl{grid-template-columns:1fr;gap:2px}
+  .hosts dt{padding-top:10px}
 }
 </style>
 </head>
 <body>
-<div style="position:fixed;left:0;right:0;bottom:0;z-index:50;background:#d9893a;color:#160e05;text-align:center;font:600 13px Inter,sans-serif;padding:8px 16px">Draft for review. Not Tony's live site.</div>
 
 <header>
   <div class="wrap">
     <a class="brand" href="#top"><img src="img/tm-logo-light.png" alt="Tony Mantz"></a>
-    <nav>
+    <nav aria-label="Main">
       <a href="#story">Story</a>
       <a href="#talks">Talks</a>
-      <a href="#hosts">For hosts</a>
-      <a class="btn btn-primary" href="#book">Book Tony</a>
+      <a href="#listen">Listen</a>
+      <a href="#podcast-hosts">Podcast hosts</a>
+      <a class="btn btn-primary" href="mailto:info@tonymantz.com?subject=Book%20a%20chat%20with%20Tony&amp;body=Name%3A%0D%0AOrganisation%20or%20show%3A%0D%0AWhat%27s%20the%20event%20or%20group%3A%0D%0ARough%20date%3A%0D%0AHow%20did%20you%20hear%20about%20Tony%3A%0D%0A">Book a chat</a>
     </nav>
   </div>
 </header>
 
 <main id="top">
 
-<section class="hero" style="padding:0">
+<section class="hero">
   <div class="hero-img" role="img" aria-label="Black and white portrait of Tony Mantz"></div>
   <div class="wrap">
-    <span class="eyebrow">Speaker &middot; Men's mental health &middot; Melbourne</span>
+    <span class="eyebrow">Speaker &middot; Men's mental health<span class="hide-sm"> &middot; 45 years in music</span></span>
     <h1>Change is<br><em>possible.</em></h1>
-    <p class="lede">Real stories. Real hope. A step forward for men and workplaces.</p>
+    <p class="lede">Keynotes, guest talks and workshops.</p>
     <div class="ctas">
-      <a class="btn btn-primary" href="#book">Book Tony to speak &rarr;</a>
+      <a class="btn btn-primary" href="mailto:info@tonymantz.com?subject=Book%20a%20chat%20with%20Tony&amp;body=Name%3A%0D%0AOrganisation%20or%20show%3A%0D%0AWhat%27s%20the%20event%20or%20group%3A%0D%0ARough%20date%3A%0D%0AHow%20did%20you%20hear%20about%20Tony%3A%0D%0A">Book a chat &rarr;</a>
       <a class="btn btn-ghost" href="#talks">See the talks</a>
     </div>
-    <p class="where">Keynotes, guest talks and workshops across Melbourne and Victoria. Further afield when travel is covered.</p>
+    <div class="records">
+      <span class="eyebrow">The records</span>
+      <ul>
+        <li><b>Mastered</b>The Waifs, <i>Up All Night</i> (2x Platinum) &middot; Shakaya, "Stop Calling Me" (Platinum)</li>
+        <li><b>Vinyl and remasters</b>the NZ gold and platinum albums of Shihad and The Feelers</li>
+        <li><b>Cut vinyl for</b>Nick Cave &amp; the Bad Seeds and Jet</li>
+      </ul>
+    </div>
   </div>
 </section>
 
 <div class="proof">
   <div class="wrap">
-    <div><b>45 years</b><span>in the music industry, since 1981</span></div>
-    <div><b>20 years</b><span>running his own studio, Jack the Bear's Deluxe Mastering</span></div>
+    <div><b>45 years</b><span>in the music industry since 1981, in many facets, with mastering at the heart of it</span></div>
+    <div><b>20 years</b><span>running his own studio, Jack the Bear's Deluxe Mastering (2006 to 2026)</span></div>
     <div><b>Since 2019</b><span>as a keynote speaker, on anxiety, addiction and recovery</span></div>
   </div>
 </div>
@@ -208,7 +297,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
       <h2>For fathers, sons, and the men <em>in between.</em></h2>
       <blockquote>Even when a relationship cannot be repaired in the way we hoped, there may still be a step toward connection, understanding, forgiveness, or peace.</blockquote>
       <cite>Tony Mantz</cite>
-      <p style="color:var(--muted);margin-top:28px;max-width:32em">Tony's talks look at men's mental health through the relationships that shape us most: our fathers and our sons. Addiction, grief, work and identity all come into it. The aim is that people see they're not necessarily without options, and leave with one thing they can do next.</p>
+      <p class="sub" style="margin-top:28px">Tony's talks look at men's mental health through the relationships that shape us most: our fathers and our sons. Addiction, grief, work and identity all come into it. The aim is that people see they're not necessarily without options, and leave with one thing they can do next.</p>
     </div>
     <figure><img src="img/portrait-hands.jpg" alt="Tony Mantz, hands clasped, black and white"></figure>
   </div>
@@ -218,19 +307,40 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
   <div class="wrap">
     <div class="lead">
       <span class="eyebrow">The story</span>
-      <h2>How he <em>got here.</em></h2>
-      <p>Tony doesn't tell his whole story at once. He shares what he's ready to share, at his own pace, because that's how real conversations between men start.</p>
+      <h2>Tony's story, <em>in brief.</em></h2>
+      <p class="sub">A few milestones along the way.</p>
+      <figure>
+        <img src="img/stage-trousers.jpg" alt="Tony on stage holding up a pair of his old trousers, far too big for him now" loading="lazy">
+        <figcaption class="credit">On stage with his old trousers. Photo: Barry C. Douglas</figcaption>
+      </figure>
       <p class="support-link">Need to talk to someone now? <a href="#help">Support lines</a></p>
     </div>
     <ol class="timeline">
-      <li><h3>1981</h3><p>Chooses music over the law career his father wanted for him. Later trains in vinyl mastering in New York.</p></li>
-      <li><h3>1991</h3><p>Lands in Melbourne at 28 with $8,000 of debt, no home and no job prospects. Starts again.</p></li>
-      <li><h3>2006 to 2026</h3><p>Builds Jack the Bear's Deluxe Mastering in Brunswick. Over his career he has mastered records for artists including Nick Cave &amp; the Bad Seeds, Jet, John Butler Trio and Xavier Rudd.</p></li>
+      <li><h3>1981</h3><p>Ventures off to do his own thing in music.</p></li>
+      <li><h3>1991</h3><p>Lands in Melbourne at 28 with $8,000 of debt, no home and no job prospects. Starts again from scratch.</p></li>
+      <li><h3>New York</h3><p>Trains in vinyl mastering in New York at Frankford Wayne.</p></li>
+      <li><h3>Gold and platinum</h3><p>Masters The Waifs' <i>Up All Night</i> (2x Platinum) and Shakaya's "Stop Calling Me" (Platinum). Across his career he also does the vinyl and remasters of Shihad's and The Feelers' NZ gold and platinum albums, and cuts vinyl for Nick Cave &amp; the Bad Seeds and Jet.</p></li>
+      <li><h3>2006 to 2026</h3><p>Builds Jack the Bear's Deluxe Mastering in Brunswick.</p></li>
       <li><h3>The hard yards</h3><p>Anxiety, addiction, major weight loss and divorce. In 2019 he starts talking about all of it on stage.</p></li>
-      <li><h3>His father</h3><p>Makes peace with his relationship with his own father, without ever having that conversation face to face.</p></li>
-      <li><h3>His son</h3><p>Loses his eldest son, Pierre, to suicide. He now speaks so other men know that when a relationship feels strained or hopeless, they are not necessarily without options.</p></li>
-      <li><h3>Now</h3><p>Sells the studio and steps up full time as a speaker for men and workplaces.</p></li>
+      <li><h3>2020</h3><p>Made peace with his father, despite the fact his dad had been deceased for 14 years.</p></li>
+      <li><h3>His son</h3><p>Loses his eldest 31-year-old son, Pierre, to suicide. He now speaks to other men about the impact suicide has on those left behind and how there's always a better way to navigate tough times without having to resort to something that can't be undone.</p>
+        <p class="support-link">If this brings anything up for you, support is there. <a href="#help">Support lines</a></p></li>
+      <li><h3>Now</h3><p>Sells the studio and steps up full time as a speaker to serve men and workplaces.</p></li>
     </ol>
+  </div>
+</section>
+
+<section class="bridge" aria-label="Mastering Music, Mastering Life">
+  <div class="wrap">
+    <div class="box">
+      <span class="eyebrow">Mastering music, mastering life</span>
+      <h2>Where the music <em>meets the message.</em></h2>
+      <p>Mastering Music, Mastering Life is the name Tony gave his own events. Forty-five years in music taught him about listening, patience and doing the work. He brings the same to a room full of people.</p>
+    </div>
+    <figure>
+      <img src="img/stage-banner.jpg" alt="Tony on stage beside his Mastering Music, Mastering Life banner" loading="lazy">
+      <figcaption class="credit">On stage at Mastering Music, Mastering Life. Photo: Barry C. Douglas</figcaption>
+    </figure>
   </div>
 </section>
 
@@ -239,7 +349,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
     <div class="head">
       <span class="eyebrow">Talks and workshops</span>
       <h2>Three ways to <em>bring Tony in.</em></h2>
-      <p>Every session is shaped around your group. No lectures, no jargon. A real story, told straight, and room for people to think about their own.</p>
+      <p class="sub">Every session is shaped around your group. No lectures, no jargon. A real story, told straight, and room for people to think about their own.</p>
     </div>
     <div class="cards">
       <div class="card">
@@ -261,16 +371,22 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
         <p class="for"><b>For</b> teams and leadership groups, middle and senior managers</p>
       </div>
     </div>
+    <p class="also"><b>Also available:</b> mentoring, by arrangement. Ask about it when you get in touch.</p>
+    <div class="midcta">
+      <p>Every booking starts with a conversation. Tell Tony about your group and he'll take it from there.</p>
+      <a class="btn btn-primary" href="mailto:info@tonymantz.com?subject=Book%20a%20chat%20with%20Tony&amp;body=Name%3A%0D%0AOrganisation%20or%20show%3A%0D%0AWhat%27s%20the%20event%20or%20group%3A%0D%0ARough%20date%3A%0D%0AHow%20did%20you%20hear%20about%20Tony%3A%0D%0A">Book a chat &rarr;</a>
+    </div>
   </div>
 </section>
 
-<section class="stage" aria-label="Tony speaking">
-  <div class="bg" role="img" aria-label="Tony Mantz speaking to a group, microphone in hand"></div>
+<section class="stage" aria-label="In his words">
+  <div class="bg" role="img" aria-label="Tony Mantz speaking into a microphone, black and white"></div>
+  <span class="photo-tag">Photo: Barry C. Douglas</span>
   <div class="wrap">
     <div class="box">
       <span class="eyebrow">In his words</span>
-      <p class="q">"But I hung onto my dream because I knew I could do it."</p>
-      <span>Tony Mantz, Tone Deaf, 2019</span>
+      <p class="q">"Just because you muck up, it doesn't make you one."</p>
+      <span class="by">Tony Mantz</span>
     </div>
   </div>
 </section>
@@ -280,7 +396,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
     <div>
       <span class="eyebrow">For hosts</span>
       <h2>Safe for the room, <em>planned with you.</em></h2>
-      <p style="color:var(--muted);max-width:30em">Some of Tony's talks touch on suicide and grief. Before any event, Tony agrees a plan with the host so everyone in the room is looked after.</p>
+      <p class="sub">Some of Tony's talks touch on suicide and grief. Before any event, Tony agrees a plan with the host so everyone in the room is looked after.</p>
       <p class="support-link">Need to talk to someone now? <a href="#help">Support lines</a></p>
     </div>
     <ul>
@@ -291,11 +407,93 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
   </div>
 </section>
 
+<section class="listen" id="listen">
+  <div class="wrap">
+    <span class="eyebrow">Listen</span>
+    <h2>Hear Tony <em>in conversation.</em></h2>
+    <p class="sub">The best way to get a feel for Tony is to hear him talk. New episodes go here as they come out.</p>
+    <div class="ep">
+      <div class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></div>
+      <div>
+        <span class="show">What's That Sound? with Stu Watts &middot; July 2023</span>
+        <h3>Episode 31: Tony "Jack the Bear" Mantz</h3>
+        <p>Stu Watts chats with Tony about his years across many facets of the music business, training in vinyl mastering at Frankford Wayne in New York, and finding his niche in mastering.</p>
+      </div>
+      <a class="btn btn-ghost" href="https://open.spotify.com/episode/5CGiuWZKTY0Z3qHYeYX53z" target="_blank" rel="noopener">Listen on Spotify</a>
+    </div>
+  </div>
+</section>
+
+<section class="hosts" id="podcast-hosts">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">For podcast hosts</span>
+      <h2>Have Tony <em>on your show.</em></h2>
+      <p class="sub">Music man for 45 years. Now he talks to men about fathers, sons and finding hope. Here's what you need to book him and prepare.</p>
+
+      <h3>Three things to talk about</h3>
+      <ol class="topics">
+        <li><b>Mastering Music, Mastering Life.</b> The stories behind the records, learning to cut vinyl in New York, and what 45 years in music taught him about listening, patience and doing the work.</li>
+        <li><b>Fathers and sons.</b> How he made peace with his own father after his father had died, and why there may still be a step toward connection, understanding or peace even when a relationship can't be repaired the way we hoped.</li>
+        <li><b>When work becomes who you are.</b> Men who work hard to provide for their families, but whose work takes over who they are until their health and family suffer. How to notice it and take a first step back.</li>
+      </ol>
+
+      <h3>Good questions to ask him</h3>
+      <ul class="qs">
+        <li>"What does a mastering engineer actually do, and what's the best record you've worked on?"</li>
+        <li>"You called your events Mastering Music, Mastering Life. What's the link between the two?"</li>
+        <li>"How did you make peace with your father after he'd died?"</li>
+        <li>"What would you say to a bloke who feels stuck right now?"</li>
+      </ul>
+
+      <h3>Booking</h3>
+      <dl>
+        <dt>Format</dt><dd>In the studio or remote. Any day that suits your show.</dd>
+        <dt>Contact</dt><dd><a href="mailto:info@tonymantz.com?subject=Podcast%20guest%20request">info@tonymantz.com</a>. Tony replies himself.</dd>
+        <dt>Heard on</dt><dd>Master Your Mix, Beyond Stereo, Foxx on the Wire, Leading Our Own Way, What's That Sound?, Wendy's Way</dd>
+      </dl>
+    </div>
+
+    <div>
+      <h3 class="first">Photos for your show</h3>
+      <div class="shots">
+        <a href="img/mic-bw.jpg" download><img src="img/mic-bw.jpg" alt="Tony speaking into a microphone, black and white" loading="lazy"><span>Mic, black and white &darr;</span></a>
+        <a href="img/mic-colour.jpg" download><img src="img/mic-colour.jpg" alt="Tony speaking into a microphone in orange glasses, colour" loading="lazy"><span>Mic, colour &darr;</span></a>
+        <a href="img/stage-banner.jpg" download><img src="img/stage-banner.jpg" alt="Tony on stage beside his Mastering Music, Mastering Life banner" loading="lazy"><span>On stage, banner &darr;</span></a>
+        <a href="img/stage-trousers.jpg" download><img src="img/stage-trousers.jpg" alt="Tony on stage holding up his old trousers" loading="lazy"><span>On stage, old trousers &darr;</span></a>
+      </div>
+      <p class="credit">Please credit all photos: "Photo: Barry C. Douglas".</p>
+
+      <div class="note">
+        <b>A note for hosts.</b> Some of Tony's conversations touch on suicide. Tony follows the Mindframe guidelines (<a href="https://mindframe.org.au" target="_blank" rel="noopener">mindframe.org.au</a>), and he asks that any episode that touches on suicide carries these help lines in the show notes:
+        <ul>
+          <li>Lifeline 13 11 14</li>
+          <li>MensLine Australia 1300 78 99 78</li>
+          <li>Suicide Call Back Service 1300 659 467</li>
+          <li>Beyond Blue 1300 22 4636</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="press">
   <div class="wrap">
-    <span class="eyebrow">As featured in</span>
+    <div class="feature">
+      <a class="clip" href="img/herald-sun-2012-article.jpg" target="_blank" rel="noopener"><img src="img/herald-sun-2012-crop.jpg" alt="Herald Sun clipping: Weight loss spares life, with before and after photos of Tony" loading="lazy"></a>
+      <div>
+        <span class="src">Herald Sun &middot; 2012</span>
+        <h3>"Weight loss spares life"</h3>
+        <p>Kate Jones on how Tony lost 65 kg after a warning from his doctor. <a href="img/herald-sun-2012-article.jpg" target="_blank" rel="noopener">Read the clipping</a></p>
+      </div>
+    </div>
+    <span class="eyebrow c">As featured in</span>
     <div class="logos">
-      <span>Tone Deaf</span><span class="sans">Heavy</span><span>Noisegate</span><span class="sans">Master Your Mix</span><span>Leading Our Own Way</span>
+      <a href="https://tonedeaf.thebrag.com/aussie-music-veteran-young-people-foot-door/" target="_blank" rel="noopener">Tone Deaf</a>
+      <a class="sans" href="https://heavymag.com.au/in-the-studio-3-with-tony-jack-the-bear-mantz/" target="_blank" rel="noopener">Heavy</a>
+      <a href="https://noisegate.com.au/in-the-studio-with-mastering-engineer-tony-jack-the-bear-mantz/" target="_blank" rel="noopener">Noisegate</a>
+      <a class="sans" href="https://masteryourmix.com/podcastep131tonyjackthebearmantz/" target="_blank" rel="noopener">Master Your Mix</a>
+      <a href="https://leadingourownway.substack.com/p/10-30-years-of-cocaine-tony-mantz-892" target="_blank" rel="noopener">Leading Our Own Way</a>
     </div>
   </div>
 </section>
@@ -303,15 +501,22 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
 <section class="book" id="book">
   <div class="wrap">
     <div>
-      <span class="eyebrow">Book Tony</span>
-      <h2>Let's talk about <em>your event.</em></h2>
-      <p>Tell Tony about your group, your date and what you'd like people to walk away with. He'll come back to you personally.</p>
+      <span class="eyebrow">Book a chat</span>
+      <h2>Start with <em>a conversation.</em></h2>
+      <p>Tell Tony about your group, your date and what you'd like people to walk away with. Podcast hosts, tell him about your show. He'll come back to you personally.</p>
     </div>
     <dl class="panel">
-      <dt>Email</dt><dd><a href="mailto:info@tonymantz.com?subject=Speaking%20enquiry">info@tonymantz.com</a></dd>
-      <dt>Instagram</dt><dd><a href="https://www.instagram.com/tony_jtb_mantz/">@tony_jtb_mantz</a></dd>
-      <dt>Based in</dt><dd>Melbourne, Victoria. Happy to travel when travel and accommodation are covered.</dd>
-      <a class="btn btn-primary" href="mailto:info@tonymantz.com?subject=Speaking%20enquiry">Send an enquiry &rarr;</a>
+      <dt>Email</dt><dd><a href="mailto:info@tonymantz.com?subject=Book%20a%20chat%20with%20Tony">info@tonymantz.com</a></dd>
+      <dt>Follow Tony</dt>
+      <dd>
+        <div class="socials">
+          <a href="https://www.instagram.com/tony_jtb_mantz/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7.3A4.7 4.7 0 1 0 12 16.7 4.7 4.7 0 0 0 12 7.3zm0 7.7a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm4.9-8.9a1.1 1.1 0 1 0 0 2.2 1.1 1.1 0 0 0 0-2.2zM17 2H7a5 5 0 0 0-5 5v10a5 5 0 0 0 5 5h10a5 5 0 0 0 5-5V7a5 5 0 0 0-5-5zm3.2 15a3.2 3.2 0 0 1-3.2 3.2H7A3.2 3.2 0 0 1 3.8 17V7A3.2 3.2 0 0 1 7 3.8h10A3.2 3.2 0 0 1 20.2 7z"/></svg>Instagram</a>
+          <a href="https://www.facebook.com/tony.mantz" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3c-2.8 0-4.5 1.8-4.5 4.5V10H7v4h2.5v8h4v-8h3l.8-4h-3.8V8.7c0-.4.3-.7.5-.7z"/></svg>Facebook</a>
+          <a href="https://www.linkedin.com/in/tony-mantz-2a2a63450" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 9.5h-3V20h3zM5 4.2a1.8 1.8 0 1 0 0 3.6 1.8 1.8 0 0 0 0-3.6zM20.5 14.2c0-3-1.6-4.9-4.1-4.9-1.4 0-2.4.7-2.9 1.5V9.5h-3V20h3v-5.6c0-1.4.6-2.4 1.9-2.4s1.8 1 1.8 2.4V20h3.3z"/></svg>LinkedIn</a>
+          <a href="https://x.com/Tony_JTB_Mantz" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 3.5h5l4.3 5.9 5-5.9h2.1l-6.2 7.3 7 9.7h-5l-4.7-6.4-5.5 6.4H3.4l6.7-7.8z"/></svg>X</a>
+        </div>
+      </dd>
+      <a class="btn btn-primary" href="mailto:info@tonymantz.com?subject=Book%20a%20chat%20with%20Tony&amp;body=Name%3A%0D%0AOrganisation%20or%20show%3A%0D%0AWhat%27s%20the%20event%20or%20group%3A%0D%0ARough%20date%3A%0D%0AHow%20did%20you%20hear%20about%20Tony%3A%0D%0A">Book a chat &rarr;</a>
     </dl>
   </div>
 </section>
@@ -334,10 +539,21 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
 
 <footer>
   <div class="wrap">
-    <span>&copy; Tony "Jack the Bear" Mantz. Melbourne, Victoria.</span>
+    <div class="socials">
+      <a href="https://www.instagram.com/tony_jtb_mantz/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7.3A4.7 4.7 0 1 0 12 16.7 4.7 4.7 0 0 0 12 7.3zm0 7.7a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm4.9-8.9a1.1 1.1 0 1 0 0 2.2 1.1 1.1 0 0 0 0-2.2zM17 2H7a5 5 0 0 0-5 5v10a5 5 0 0 0 5 5h10a5 5 0 0 0 5-5V7a5 5 0 0 0-5-5zm3.2 15a3.2 3.2 0 0 1-3.2 3.2H7A3.2 3.2 0 0 1 3.8 17V7A3.2 3.2 0 0 1 7 3.8h10A3.2 3.2 0 0 1 20.2 7z"/></svg>@tony_jtb_mantz</a>
+      <a href="https://www.facebook.com/tony.mantz" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3c-2.8 0-4.5 1.8-4.5 4.5V10H7v4h2.5v8h4v-8h3l.8-4h-3.8V8.7c0-.4.3-.7.5-.7z"/></svg>facebook.com/tony.mantz</a>
+      <a href="https://www.linkedin.com/in/tony-mantz-2a2a63450" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 9.5h-3V20h3zM5 4.2a1.8 1.8 0 1 0 0 3.6 1.8 1.8 0 0 0 0-3.6zM20.5 14.2c0-3-1.6-4.9-4.1-4.9-1.4 0-2.4.7-2.9 1.5V9.5h-3V20h3v-5.6c0-1.4.6-2.4 1.9-2.4s1.8 1 1.8 2.4V20h3.3z"/></svg>LinkedIn</a>
+      <a href="https://x.com/Tony_JTB_Mantz" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 3.5h5l4.3 5.9 5-5.9h2.1l-6.2 7.3 7 9.7h-5l-4.7-6.4-5.5 6.4H3.4l6.7-7.8z"/></svg>@Tony_JTB_Mantz</a>
+    </div>
+    <div class="row">
+      <span>&copy; Tony "Jack the Bear" Mantz &middot; <a href="mailto:info@tonymantz.com">info@tonymantz.com</a></span>
+      <span>Stage photos: Barry C. Douglas</span>
+    </div>
     <span>Tony is a speaker sharing lived experience, not a counsellor or clinician.</span>
   </div>
 </footer>
+
+<div class="draft">Draft for review. Not Tony's live site.</div>
 
 </body>
 </html>
