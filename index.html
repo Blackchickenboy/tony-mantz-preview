@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
 <title>Tony "Jack the Bear" Mantz | Speaker</title>
-<meta name="description" content="Tony 'Jack the Bear' Mantz: 45 years in music, now keynotes, guest talks and workshops for men and workplaces on fathers and sons, mental health, addiction and hope.">
+<meta name="description" content="Tony 'Jack the Bear' Mantz: keynotes, guest talks and workshops for fathers, sons, and the men in between, on men's mental health, addiction and hope.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -242,6 +242,51 @@ footer .socials a{color:var(--muted);font-size:14px}
   .hosts dl{grid-template-columns:1fr;gap:2px}
   .hosts dt{padding-top:10px}
 }
+
+/* fathers-and-sons rebuild, 23 Nov */
+.hero h1{font-size:clamp(40px,5.6vw,80px);line-height:1.02;max-width:min(8.6em,100%)}
+.hero .change{font-family:'Fraunces',Georgia,serif;font-style:italic;font-weight:500;color:var(--ember);font-size:clamp(26px,3vw,40px);line-height:1.1;margin:-6px 0 14px}
+.hero .photo-tag{z-index:3;bottom:48px}
+.message blockquote{font-size:clamp(26px,3vw,40px)}
+.message .lead-in{margin-bottom:10px}
+.sides{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:10px}
+.side{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:34px 32px}
+.side .eyebrow{display:block;margin-bottom:6px}
+.side h3{font-family:'Fraunces',Georgia,serif;font-size:28px;line-height:1.15;margin-bottom:12px}
+.side p{color:#ddd5c9}
+.side .support-link{margin-top:14px}
+.story .head{max-width:40em;margin-bottom:34px}
+.talks .fit{margin-top:26px;font-size:15px;color:var(--muted);max-width:52em}
+.card .tag{font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--dim);margin-top:auto;padding-top:20px;border-top:1px solid var(--line)}
+.card.lead{border-color:#5a4228;background:linear-gradient(180deg,#1f1810 0%,var(--bg2) 70%)}
+.behind{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.behind .head{max-width:40em;margin-bottom:34px}
+.behind .proof{background:none;border:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-bottom:56px}
+.behind .proof .wrap{width:100%}
+.bands{display:flex;flex-wrap:wrap;gap:10px 12px;margin:12px 0 0}
+.bands span{border:1px solid var(--line);border-radius:999px;padding:8px 16px;font-size:15px;color:var(--cream);background:var(--bg)}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:50px;margin-top:64px;align-items:start}
+.duo figure img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:4px}
+.duo h3{font-family:'Fraunces',Georgia,serif;font-size:28px;line-height:1.15;margin:20px 0 10px}
+.duo .src{font-size:12.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--dim);display:block;margin-top:20px}
+.duo .src + h3{margin-top:4px}
+.duo p{color:#ddd5c9}
+.duo p a{color:var(--ember-hi);text-decoration:none;border-bottom:1px solid var(--ember)}
+.eps{display:grid;gap:12px;margin-top:12px}
+.ep{grid-template-columns:1fr auto;padding:20px 24px;margin-top:0}
+.ep h3{font-size:21px}
+.listen-wrap{margin-top:64px}
+.listen-wrap h3.t,.press-row h3.t{font-family:'Fraunces',Georgia,serif;font-size:28px;margin-bottom:4px}
+.press-row{margin-top:56px}
+.press-row .logos{justify-content:flex-start;margin-top:16px}
+@media (max-width:900px){
+  .sides,.duo{grid-template-columns:1fr;gap:22px}
+  .duo{gap:44px}
+  .side{padding:26px 22px}
+  .ep{grid-template-columns:1fr;padding:20px}
+  .press-row .logos{gap:12px 28px}
+  .hero .photo-tag{top:84px;bottom:auto}
+}
 </style>
 </head>
 <body>
@@ -262,84 +307,90 @@ footer .socials a{color:var(--muted);font-size:14px}
 
 <section class="hero">
   <div class="hero-img" role="img" aria-label="Black and white portrait of Tony Mantz"></div>
+  <span class="photo-tag">Photo: Barry C. Douglas</span>
   <div class="wrap">
-    <span class="eyebrow">Speaker &middot; Men's mental health<span class="hide-sm"> &middot; 45 years in music</span></span>
-    <h1>Change is<br><em>possible.</em></h1>
+    <span class="eyebrow">Speaker &middot; Connecting fathers and sons</span>
+    <h1>For fathers, sons, and the men <em>in between.</em></h1>
+    <p class="change">Change is possible.</p>
     <p class="lede">Keynotes, guest talks and workshops.</p>
     <div class="ctas">
       <a class="btn btn-primary" href="mailto:info@tonymantz.com?subject=Book%20a%20chat%20with%20Tony&amp;body=Name%3A%0D%0AOrganisation%20or%20show%3A%0D%0AWhat%27s%20the%20event%20or%20group%3A%0D%0ARough%20date%3A%0D%0AHow%20did%20you%20hear%20about%20Tony%3A%0D%0A">Book a chat &rarr;</a>
       <a class="btn btn-ghost" href="#talks">See the talks</a>
     </div>
-    <div class="records">
-      <span class="eyebrow">The records</span>
-      <ul>
-        <li><b>Mastered</b>The Waifs, <i>Up All Night</i> (2x Platinum) &middot; Shakaya, "Stop Calling Me" (Platinum)</li>
-        <li><b>Vinyl and remasters</b>the NZ gold and platinum albums of Shihad and The Feelers</li>
-        <li><b>Cut vinyl for</b>Nick Cave &amp; the Bad Seeds and Jet</li>
-      </ul>
-    </div>
   </div>
 </section>
-
-<div class="proof">
-  <div class="wrap">
-    <div><b>45 years</b><span>in the music industry since 1981, in many facets, with mastering at the heart of it</span></div>
-    <div><b>20 years</b><span>running his own studio, Jack the Bear's Deluxe Mastering (2006 to 2026)</span></div>
-    <div><b>Since 2019</b><span>as a keynote speaker, on anxiety, addiction and recovery</span></div>
-  </div>
-</div>
 
 <section class="message">
   <div class="wrap">
     <div>
-      <span class="eyebrow">The message</span>
-      <h2>For fathers, sons, and the men <em>in between.</em></h2>
+      <span class="eyebrow lead-in">The message</span>
       <blockquote>Even when a relationship cannot be repaired in the way we hoped, there may still be a step toward connection, understanding, forgiveness, or peace.</blockquote>
       <cite>Tony Mantz</cite>
       <p class="sub" style="margin-top:28px">Tony's talks look at men's mental health through the relationships that shape us most: our fathers and our sons. Addiction, grief, work and identity all come into it. The aim is that people see they're not necessarily without options, and leave with one thing they can do next.</p>
     </div>
-    <figure><img src="img/portrait-hands.jpg" alt="Tony Mantz, hands clasped, black and white"></figure>
+    <figure>
+      <img src="img/portrait-hands.jpg" alt="Tony Mantz, hands clasped, black and white">
+      <figcaption class="credit">Photo: Barry C. Douglas</figcaption>
+    </figure>
   </div>
 </section>
 
 <section class="story" id="story">
-  <div class="wrap">
-    <div class="lead">
+  <div class="wrap" style="display:block">
+    <div class="head">
       <span class="eyebrow">The story</span>
-      <h2>Tony's story, <em>in brief.</em></h2>
-      <p class="sub">A few milestones along the way.</p>
-      <figure>
-        <img src="img/stage-trousers.jpg" alt="Tony on stage holding up a pair of his old trousers, far too big for him now" loading="lazy">
-        <figcaption class="credit">On stage with his old trousers. Photo: Barry C. Douglas</figcaption>
-      </figure>
-      <p class="support-link">Need to talk to someone now? <a href="#help">Support lines</a></p>
+      <h2>Father and son, <em>from both sides.</em></h2>
     </div>
-    <ol class="timeline">
-      <li><h3>1981</h3><p>Ventures off to do his own thing in music.</p></li>
-      <li><h3>1991</h3><p>Lands in Melbourne at 28 with $8,000 of debt, no home and no job prospects. Starts again from scratch.</p></li>
-      <li><h3>New York</h3><p>Trains in vinyl mastering in New York at Frankford Wayne.</p></li>
-      <li><h3>Gold and platinum</h3><p>Masters The Waifs' <i>Up All Night</i> (2x Platinum) and Shakaya's "Stop Calling Me" (Platinum). Across his career he also does the vinyl and remasters of Shihad's and The Feelers' NZ gold and platinum albums, and cuts vinyl for Nick Cave &amp; the Bad Seeds and Jet.</p></li>
-      <li><h3>2006 to 2026</h3><p>Builds Jack the Bear's Deluxe Mastering in Brunswick.</p></li>
-      <li><h3>The hard yards</h3><p>Anxiety, addiction, major weight loss and divorce. In 2019 he starts talking about all of it on stage.</p></li>
-      <li><h3>2020</h3><p>Made peace with his father, despite the fact his dad had been deceased for 14 years.</p></li>
-      <li><h3>His son</h3><p>Loses his eldest 31-year-old son, Pierre, to suicide. He now speaks to other men about the impact suicide has on those left behind and how there's always a better way to navigate tough times without having to resort to something that can't be undone.</p>
-        <p class="support-link">If this brings anything up for you, support is there. <a href="#help">Support lines</a></p></li>
-      <li><h3>Now</h3><p>Sells the studio and steps up full time as a speaker to serve men and workplaces.</p></li>
-    </ol>
+    <div class="sides">
+      <div class="side">
+        <span class="eyebrow">Tony as a son &middot; 2020</span>
+        <h3>His father</h3>
+        <p>Made peace with his father, despite the fact his dad had been deceased for 14 years.</p>
+      </div>
+      <div class="side">
+        <span class="eyebrow">Tony as a father</span>
+        <h3>His son</h3>
+        <p>Loses his eldest 31-year-old son, Pierre, to suicide. He now speaks to other men about the impact suicide has on those left behind and how there's always a better way to navigate tough times without having to resort to something that can't be undone.</p>
+        <p class="support-link">If this brings anything up for you, support is there. <a href="#help">Support lines</a></p>
+      </div>
+    </div>
   </div>
 </section>
 
-<section class="bridge" aria-label="Mastering Music, Mastering Life">
+
+<section class="talks" id="talks">
   <div class="wrap">
-    <div class="box">
-      <span class="eyebrow">Mastering music, mastering life</span>
-      <h2>Where the music <em>meets the message.</em></h2>
-      <p>Mastering Music, Mastering Life is the name Tony gave his own events. Forty-five years in music taught him about listening, patience and doing the work. He brings the same to a room full of people.</p>
+    <div class="head">
+      <span class="eyebrow">Talks</span>
+      <h2>Three ways to <em>bring Tony in.</em></h2>
+      <p class="sub">Every session is shaped around your group. No lectures, no jargon. A real story, told straight, and room for people to think about their own.</p>
     </div>
-    <figure>
-      <img src="img/stage-banner.jpg" alt="Tony on stage beside his Mastering Music, Mastering Life banner" loading="lazy">
-      <figcaption class="credit">On stage at Mastering Music, Mastering Life. Photo: Barry C. Douglas</figcaption>
-    </figure>
+    <div class="cards">
+      <div class="card lead">
+        <span class="num">01</span>
+        <h3>Fathers and Sons</h3>
+        <p>Nobody hands us a manual. What we inherit from our dads, how to mend what's broken, and why there may still be a step toward peace even when a relationship can't be repaired the way we hoped.</p>
+        <p class="tag">Relationships &middot; The lead talk</p>
+      </div>
+      <div class="card">
+        <span class="num">02</span>
+        <h3>The Mid-Life Overhaul</h3>
+        <p>"Instead of a mid-life crisis, let's talk about a mid-life overhaul." For men who feel stuck, burnt out or quietly struggling: health, habits, purpose and the courage to start again, whatever your age.</p>
+        <p class="tag">Men's health</p>
+      </div>
+      <div class="card">
+        <span class="num">03</span>
+        <h3>Second Chances</h3>
+        <p>A lived-experience talk about addiction as a way of coping with old pain, what finally worked for Tony, and hope for anyone still in it.</p>
+        <p class="tag">Addiction and recovery</p>
+      </div>
+    </div>
+    <p class="fit">As a keynote or guest talk, an interactive workshop or a tailored corporate session, for men's groups, dads' groups, community organisations, workplaces and conferences.</p>
+    <p class="also"><b>Also available:</b> mentoring.</p>
+    <div class="midcta">
+      <p>Every booking starts with a conversation. Tell Tony about your group and he'll take it from there.</p>
+      <a class="btn btn-primary" href="mailto:info@tonymantz.com?subject=Book%20a%20chat%20with%20Tony&amp;body=Name%3A%0D%0AOrganisation%20or%20show%3A%0D%0AWhat%27s%20the%20event%20or%20group%3A%0D%0ARough%20date%3A%0D%0AHow%20did%20you%20hear%20about%20Tony%3A%0D%0A">Book a chat &rarr;</a>
+    </div>
   </div>
 </section>
 
@@ -355,79 +406,86 @@ footer .socials a{color:var(--muted);font-size:14px}
   </div>
 </section>
 
-<section class="listen" id="listen">
-  <div class="wrap">
-    <span class="eyebrow">Listen</span>
-    <h2>Hear Tony <em>in conversation.</em></h2>
-    <p class="sub">The best way to get a feel for Tony is to hear him talk. New episodes go here as they come out.</p>
-    <div class="ep">
-      <div class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></div>
-      <div>
-        <span class="show">What's That Sound? with Stu Watts &middot; July 2023</span>
-        <h3>Episode 31: Tony "Jack the Bear" Mantz</h3>
-        <p>Stu Watts chats with Tony about his years across many facets of the music business, training in vinyl mastering at Frankford Wayne in New York, and finding his niche in mastering.</p>
-      </div>
-      <a class="btn btn-ghost" href="https://open.spotify.com/episode/5CGiuWZKTY0Z3qHYeYX53z" target="_blank" rel="noopener">Listen on Spotify</a>
-    </div>
-  </div>
-</section>
-
-<section class="press">
-  <div class="wrap">
-    <div class="feature">
-      <a class="clip" href="img/herald-sun-2012-article.jpg" target="_blank" rel="noopener"><img src="img/herald-sun-2012-crop.jpg" alt="Herald Sun clipping: Weight loss spares life, with before and after photos of Tony" loading="lazy"></a>
-      <div>
-        <span class="src">Herald Sun &middot; 2012</span>
-        <h3>"Weight loss spares life"</h3>
-        <p>Kate Jones on how Tony lost 65 kg after a warning from his doctor. <a href="img/herald-sun-2012-article.jpg" target="_blank" rel="noopener">Read the clipping</a></p>
-      </div>
-    </div>
-    <span class="eyebrow c">As featured in</span>
-    <div class="logos">
-      <a href="https://tonedeaf.thebrag.com/aussie-music-veteran-young-people-foot-door/" target="_blank" rel="noopener">Tone Deaf</a>
-      <a class="sans" href="https://heavymag.com.au/in-the-studio-3-with-tony-jack-the-bear-mantz/" target="_blank" rel="noopener">Heavy</a>
-      <a href="https://noisegate.com.au/in-the-studio-with-mastering-engineer-tony-jack-the-bear-mantz/" target="_blank" rel="noopener">Noisegate</a>
-      <a class="sans" href="https://masteryourmix.com/podcastep131tonyjackthebearmantz/" target="_blank" rel="noopener">Master Your Mix</a>
-      <a href="https://leadingourownway.substack.com/p/10-30-years-of-cocaine-tony-mantz-892" target="_blank" rel="noopener">Leading Our Own Way</a>
-    </div>
-  </div>
-</section>
-
-<section class="talks" id="talks">
+<section class="behind" id="music">
   <div class="wrap">
     <div class="head">
-      <span class="eyebrow">Talks and workshops</span>
-      <h2>Three ways to <em>bring Tony in.</em></h2>
-      <p class="sub">Every session is shaped around your group. No lectures, no jargon. A real story, told straight, and room for people to think about their own.</p>
+      <span class="eyebrow">Behind the story</span>
+      <h2>A life in music, <em>and a second chance.</em></h2>
     </div>
-    <div class="cards">
-      <div class="card">
-        <span class="num">01</span>
-        <h3>Guest talk or keynote</h3>
-        <p>Tony's story and message for your event: fathers and sons, men's mental health, and the step forward that's still possible when things feel stuck.</p>
-        <p class="for"><b>For</b> men's groups, community organisations, conferences and events</p>
-      </div>
-      <div class="card">
-        <span class="num">02</span>
-        <h3>Interactive workshop</h3>
-        <p>A talk followed by facilitated discussion and practical next steps. Tony is at his best getting a group talking honestly.</p>
-        <p class="for"><b>For</b> men's groups and community organisations</p>
-      </div>
-      <div class="card">
-        <span class="num">03</span>
-        <h3>Tailored corporate session</h3>
-        <p>For teams and leadership groups. How a strong commitment to work and providing for family can quietly lead to disconnection, and how to notice and fix the balance.</p>
-        <p class="for"><b>For</b> teams and leadership groups, middle and senior managers</p>
+
+    <div class="proof">
+      <div class="wrap">
+        <div><b>40+ years</b><span>in the music industry, since 1981, with mastering at the heart of it</span></div>
+        <div><b>30+ years</b><span>working for himself: freelance from 1991, Sing Sing Studios 2000 to 2006, then his own studio, Jack the Bear's Deluxe Mastering, 2006 to 2026</span></div>
+        <div><b>Since 2019</b><span>as a keynote speaker, on anxiety, addiction and recovery</span></div>
       </div>
     </div>
-    <p class="also"><b>Also available:</b> mentoring, by arrangement. Ask about it when you get in touch.</p>
-    <div class="midcta">
-      <p>Every booking starts with a conversation. Tell Tony about your group and he'll take it from there.</p>
-      <a class="btn btn-primary" href="mailto:info@tonymantz.com?subject=Book%20a%20chat%20with%20Tony&amp;body=Name%3A%0D%0AOrganisation%20or%20show%3A%0D%0AWhat%27s%20the%20event%20or%20group%3A%0D%0ARough%20date%3A%0D%0AHow%20did%20you%20hear%20about%20Tony%3A%0D%0A">Book a chat &rarr;</a>
+
+    <span class="eyebrow" style="color:var(--dim)">Records Tony has had a hand in</span>
+    <div class="bands">
+      <span>The Waifs</span><span>Shakaya</span><span>Shihad</span><span>The Feelers</span><span>Silverchair</span><span>Nick Cave &amp; the Bad Seeds</span><span>Jet</span><span>You Am I</span><span>Augie March</span><span>Bliss n Eso</span>
+    </div>
+
+    <div class="duo">
+      <div>
+        <figure>
+          <img src="img/stage-banner.jpg" alt="Tony on stage beside his Mastering Music, Mastering Life banner" loading="lazy">
+          <figcaption class="credit">Photo: Barry C. Douglas</figcaption>
+        </figure>
+        <h3>Mastering Music, Mastering Life</h3>
+        <p>Tony's own mental health event for the music industry. He hosted every night. Forty-five years in music taught him about listening, patience and doing the work. He brings the same to a room full of people.</p>
+      </div>
+      <div>
+        <figure>
+          <img src="img/stage-trousers.jpg" alt="Tony on stage holding up a pair of his old trousers, far too big for him now" loading="lazy">
+          <figcaption class="credit">Photo: Barry C. Douglas</figcaption>
+        </figure>
+        <span class="src">Herald Sun &middot; 2012</span>
+        <h3>"Weight loss spares life"</h3>
+        <p>Kate Jones on how Tony lost 65 kg after a warning from his doctor. All up, he's now lost 70 kg. <a href="img/herald-sun-2012-article.jpg" target="_blank" rel="noopener">Read the clipping</a></p>
+      </div>
+    </div>
+
+    <div class="listen-wrap" id="listen">
+      <h3 class="t">Listen</h3>
+      <p class="sub">Tony in conversation, newest first.</p>
+      <div class="eps">
+        <div class="ep">
+          <div>
+            <span class="show">Roll With The Punches with Tiff Cook &middot; June 2024</span>
+            <h3>Shifting Gears at 60: From Self-Sabotage to Self-Actualisation</h3>
+          </div>
+          <a class="btn btn-ghost" href="https://podcasts.apple.com/au/podcast/shifting-gears-at-60-from-self-sabotage-to-self-actualisation/id1520188386?i=1000660707580" target="_blank" rel="noopener">Listen</a>
+        </div>
+        <div class="ep">
+          <div>
+            <span class="show">The You Project with Craig Harper &middot; April 2024</span>
+            <h3>#1497 Starting Again (At 60)</h3>
+          </div>
+          <a class="btn btn-ghost" href="https://podcasts.apple.com/au/podcast/1497-starting-again-at-60-tony-mantz-jack-the-bear/id1342430567?i=1000652867286" target="_blank" rel="noopener">Listen</a>
+        </div>
+        <div class="ep">
+          <div>
+            <span class="show">What's That Sound? with Stu Watts &middot; July 2023</span>
+            <h3>Episode 31: Tony "Jack the Bear" Mantz</h3>
+          </div>
+          <a class="btn btn-ghost" href="https://open.spotify.com/episode/5CGiuWZKTY0Z3qHYeYX53z" target="_blank" rel="noopener">Listen</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="press-row">
+      <span class="eyebrow" style="color:var(--dim)">Also featured in</span>
+      <div class="logos">
+        <a href="https://tonedeaf.thebrag.com/aussie-music-veteran-young-people-foot-door/" target="_blank" rel="noopener">Tone Deaf</a>
+        <a class="sans" href="https://heavymag.com.au/in-the-studio-3-with-tony-jack-the-bear-mantz/" target="_blank" rel="noopener">Heavy</a>
+        <a href="https://noisegate.com.au/in-the-studio-with-mastering-engineer-tony-jack-the-bear-mantz/" target="_blank" rel="noopener">Noisegate</a>
+        <a class="sans" href="https://masteryourmix.com/podcastep131tonyjackthebearmantz/" target="_blank" rel="noopener">Master Your Mix</a>
+        <a href="https://leadingourownway.substack.com/p/10-30-years-of-cocaine-tony-mantz-892" target="_blank" rel="noopener">Leading Our Own Way</a>
+      </div>
     </div>
   </div>
 </section>
-
 
 <section class="book" id="book">
   <div class="wrap">
@@ -470,12 +528,12 @@ footer .socials a{color:var(--muted);font-size:14px}
 
 <footer>
   <div class="wrap">
-    <div class="socials">
-      <a href="https://www.instagram.com/tony_jtb_mantz/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7.3A4.7 4.7 0 1 0 12 16.7 4.7 4.7 0 0 0 12 7.3zm0 7.7a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm4.9-8.9a1.1 1.1 0 1 0 0 2.2 1.1 1.1 0 0 0 0-2.2zM17 2H7a5 5 0 0 0-5 5v10a5 5 0 0 0 5 5h10a5 5 0 0 0 5-5V7a5 5 0 0 0-5-5zm3.2 15a3.2 3.2 0 0 1-3.2 3.2H7A3.2 3.2 0 0 1 3.8 17V7A3.2 3.2 0 0 1 7 3.8h10A3.2 3.2 0 0 1 20.2 7z"/></svg>Instagram</a>
-      <a href="https://www.facebook.com/tony.mantz" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3c-2.8 0-4.5 1.8-4.5 4.5V10H7v4h2.5v8h4v-8h3l.8-4h-3.8V8.7c0-.4.3-.7.5-.7z"/></svg>Facebook</a>
-      <a href="https://www.linkedin.com/in/tony-mantz-2a2a63450" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 9.5h-3V20h3zM5 4.2a1.8 1.8 0 1 0 0 3.6 1.8 1.8 0 0 0 0-3.6zM20.5 14.2c0-3-1.6-4.9-4.1-4.9-1.4 0-2.4.7-2.9 1.5V9.5h-3V20h3v-5.6c0-1.4.6-2.4 1.9-2.4s1.8 1 1.8 2.4V20h3.3z"/></svg>LinkedIn</a>
-      <a href="https://x.com/Tony_JTB_Mantz" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 3.5h5l4.3 5.9 5-5.9h2.1l-6.2 7.3 7 9.7h-5l-4.7-6.4-5.5 6.4H3.4l6.7-7.8z"/></svg>X</a>
-    </div>
+      <div class="socials">
+        <a href="https://www.instagram.com/tony_jtb_mantz/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7.3A4.7 4.7 0 1 0 12 16.7 4.7 4.7 0 0 0 12 7.3zm0 7.7a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm4.9-8.9a1.1 1.1 0 1 0 0 2.2 1.1 1.1 0 0 0 0-2.2zM17 2H7a5 5 0 0 0-5 5v10a5 5 0 0 0 5 5h10a5 5 0 0 0 5-5V7a5 5 0 0 0-5-5zm3.2 15a3.2 3.2 0 0 1-3.2 3.2H7A3.2 3.2 0 0 1 3.8 17V7A3.2 3.2 0 0 1 7 3.8h10A3.2 3.2 0 0 1 20.2 7z"/></svg>Instagram</a>
+        <a href="https://www.facebook.com/tony.mantz" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3c-2.8 0-4.5 1.8-4.5 4.5V10H7v4h2.5v8h4v-8h3l.8-4h-3.8V8.7c0-.4.3-.7.5-.7z"/></svg>Facebook</a>
+        <a href="https://www.linkedin.com/in/tony-mantz-2a2a63450" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 9.5h-3V20h3zM5 4.2a1.8 1.8 0 1 0 0 3.6 1.8 1.8 0 0 0 0-3.6zM20.5 14.2c0-3-1.6-4.9-4.1-4.9-1.4 0-2.4.7-2.9 1.5V9.5h-3V20h3v-5.6c0-1.4.6-2.4 1.9-2.4s1.8 1 1.8 2.4V20h3.3z"/></svg>LinkedIn</a>
+        <a href="https://x.com/Tony_JTB_Mantz" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 3.5h5l4.3 5.9 5-5.9h2.1l-6.2 7.3 7 9.7h-5l-4.7-6.4-5.5 6.4H3.4l6.7-7.8z"/></svg>X</a>
+      </div>
     <div class="row">
       <span>&copy; Tony "Jack the Bear" Mantz &middot; <a href="mailto:info@tonymantz.com">info@tonymantz.com</a></span>
     </div>
